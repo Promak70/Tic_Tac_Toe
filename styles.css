@@ -1,0 +1,94 @@
+/* Global reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0bc792;
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Game board styles */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 15px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: hsl(59, 93%, 71%);
+    border-radius: 15px;
+}
+
+/* Cell styles */
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #ecf0f1;
+    border: 3px solid #4c502c;
+    border-radius: 25px; /* Rounded rectangle */
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Colors for X and O */
+.cell.x {
+    background-color: #6e34db; /* Light blue for X */
+    color: #fff;
+}
+
+.cell.o {
+    background-color: #e74c3c; /* Light red for O */
+    color: #fff;
+}
+
+/* Cell hover effect */
+.cell:hover {
+    background-color: #bdc3c7; /* Light gray on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Game message styles */
+#message {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: rgb(26, 26, 24);
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #02080b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: #0c1217;
+}
